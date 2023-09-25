@@ -3,11 +3,12 @@ pipeline {
     
     stages{
 
-//        stage ("checkout"){
-//            steps {
-//                git branch:'main', url: 'https://github.com/g0t4/course3-jenkins-gs-spring-petclinic.git'
-//            }    
-//        }
+        stage ("checkout"){
+              steps {
+               git branch:'main', url: 'https://github.com/zsolt-github/Spring-Petclinic-Clone.git'
+//               git branch:'main', url: 'https://github.com/g0t4/course3-jenkins-gs-spring-petclinic.git'
+            }    
+        }
 
         stage ("build"){
             steps {    
